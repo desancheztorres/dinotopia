@@ -39,6 +39,14 @@ class Dinosaur
 
     public function getSizeDescription(): string
     {
-        return $this->getLength() >= 10 ? "Large" : "Small";
+        if ($this->getLength() >= 10) {
+            return 'Large';
+        }
+
+        if ($this->getLength() >=5) {
+            return 'Medium';
+        }
+
+        return 'Small';
     }
 }
