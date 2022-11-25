@@ -43,3 +43,6 @@ cs-fix-risky: tools/php-cs-fixer/vendor/bin/php-cs-fixer
 
 test:
 	$(RUN_PHP) bin/phpunit --cache-result-file=var/cache/phpunit/.phpunit.cache
+
+test-dox:
+	$(RUN_PHP) bin/phpunit --testdox --cache-result-file=var/cache/phpunit/.phpunit.cache
